@@ -1,0 +1,33 @@
+//Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+//Vendors
+@import 'vendors/bootstrap-5.0/bootstrap';
+@import 'vendors/jquery-ui';
+
+//Base
+@import 'base/reset';
+@import 'base/typography';
+
+//Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
+@import 'layout/layout';
+@import 'layout/nav';
+
+//Components
+@import 'components/buttons';
+@import 'components/navigation';
+@import 'components/profile';
+
+//Pages
+@import 'pages/home';
+@import 'pages/contact';
+
+//Themes
+@import 'themes/theme';
+@import 'themes/admin';

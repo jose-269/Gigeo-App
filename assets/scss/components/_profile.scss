@@ -1,0 +1,32 @@
+.profile {
+
+    &__info-txt {
+
+        p {
+        color: $old-silver;
+
+        }
+        
+    }
+
+    &__buttons {
+    
+        button:first-child {
+            background-color: $pale-blue;
+            height: 2.375rem;
+            width: 5.4375rem;
+            border: none;
+            
+        }
+
+        button:last-child {
+            background-color: $salmon;
+            height: 2.375rem;
+            width: 5.4375rem;
+            border: none;
+            margin-left: .8rem;
+           
+        }
+    }
+
+}

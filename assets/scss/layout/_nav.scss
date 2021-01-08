@@ -1,0 +1,61 @@
+.contenedor__nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.75rem;
+    
+    
+        &-logo svg {
+            width: 200px;
+        }
+
+        &-list ul {
+            display: flex;
+            list-style: none;
+             
+        }
+
+}
+
+/***Medias Query Nav***/
+
+//Mobile xs devices
+@media only screen and (max-width: 320px) {
+    .contenedor__nav {
+        
+        padding: .5rem 1.75rem;
+        
+        &-logo svg {
+            width: 150px;
+        }
+
+        &-list ul .list-1 {
+            display: none;
+        }
+
+    }
+    
+}
+
+//Mobile sm devices
+@media only screen and (max-width: 576px){
+    .contenedor__nav {
+
+        &-logo svg {
+            width: 150px;
+        }
+
+        &-list ul .list-1 {
+            display: none;
+        }
+
+    }
+}
+
+//Mobile md devices
+@media only screen and (max-width:768px ){
+    .contenedor__nav-logo svg {
+        width: 150px;
+    }
+}
