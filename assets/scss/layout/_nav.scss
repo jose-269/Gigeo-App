@@ -47,15 +47,13 @@
         &-list ul  {
             display: flex;
             flex-direction: column-reverse;
-            position: fixed;
-            right: 26px;
+            position: absolute;
+            right: 30px;
             top: 25px;
             background-color: $white;
         
             li {
             padding: 5px 5px;
-           
-           
            
             }     
         }
