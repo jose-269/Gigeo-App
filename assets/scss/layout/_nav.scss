@@ -4,8 +4,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.75rem;
-    
-    
+
+          
         &-logo svg {
             width: 200px;
         }
@@ -13,7 +13,11 @@
         &-list ul {
             display: flex;
             list-style: none;
-             
+            
+            li {
+                padding-left: 1.5rem;
+            }
+            
         }
 
 }
@@ -23,7 +27,7 @@
 //Mobile xs devices
 @media only screen and (max-width: 320px) {
     .contenedor__nav {
-        
+        height: 80px;
         padding: .5rem 1.75rem;
         
         &-logo svg {
@@ -35,7 +39,27 @@
         }
 
     }
-    
+
+    //Menu hamburguesa desplegable
+
+    .contenedor__nav{
+        
+        &-list ul  {
+            display: flex;
+            flex-direction: column-reverse;
+            position: fixed;
+            right: 26px;
+            top: 25px;
+            background-color: $white;
+        
+            li {
+            padding: 5px 5px;
+           
+           
+           
+            }     
+        }
+    }
 }
 
 //Mobile sm devices

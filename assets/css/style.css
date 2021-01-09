@@ -10783,10 +10783,14 @@ p {
   display: flex;
   list-style: none;
 }
+.contenedor__nav-list ul li {
+  padding-left: 1.5rem;
+}
 
 /***Medias Query Nav***/
 @media only screen and (max-width: 320px) {
   .contenedor__nav {
+    height: 80px;
     padding: 0.5rem 1.75rem;
   }
   .contenedor__nav-logo svg {
@@ -10794,6 +10798,18 @@ p {
   }
   .contenedor__nav-list ul .list-1 {
     display: none;
+  }
+
+  .contenedor__nav-list ul {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    right: 26px;
+    top: 25px;
+    background-color: #FFF;
+  }
+  .contenedor__nav-list ul li {
+    padding: 5px 5px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -10814,7 +10830,6 @@ p {
 }
 
 .contenedor__nav-list ul li {
-  padding-left: 1.5rem;
   text-decoration: none;
 }
 .contenedor__nav-list ul li a {
